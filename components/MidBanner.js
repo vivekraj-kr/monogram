@@ -11,7 +11,7 @@ const StyledMidBanner = styled.section`
   color: #ffffff;
   padding-top: 93px;
   position: relative;
-  height: 800px;
+  height: 893px;
   margin: 0 -58px;
   background-image: url("/images/mid_banner.svg");
   background-repeat: no-repeat;
