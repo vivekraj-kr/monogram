@@ -13,11 +13,14 @@ const StyledFallingLogosText = styled.div`
   color: #ffffff;
   max-width: 730px;
   margin: 0 auto;
+`;
 
-  p {
-    font-size: 24px;
-    line-height: 38.88px;
-    margin-top: 63px;
+const StyledFallingLogosPara = styled.p`
+  font-size: 24px;
+  line-height: 38.88px;
+  margin-top: 63px;
+  @media (max-width: 768px) {
+    font-size: 20px;
   }
 `;
 
@@ -26,6 +29,10 @@ const StyledLogoGrid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 0 100px;
   padding-top: 200px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const StyledLogo = styled.div``;
@@ -166,11 +173,11 @@ const FallingLogos = () => {
         </StyledLogoGrid>
         <StyledFallingLogosText>
           <StyledH2>api</StyledH2>
-          <p>
+          <StyledFallingLogosPara>
             At build time, a Jamstack website uses data from one or more APIs to
             generate markup. These APIs can be a headless CMS like Prismic, a
             database like Supabase, or even a local JSON file!
-          </p>
+          </StyledFallingLogosPara>
         </StyledFallingLogosText>
         <StyledSphere>
           <Image

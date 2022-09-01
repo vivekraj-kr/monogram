@@ -25,6 +25,10 @@ const StyledMarkupDescription = styled.p`
   font-size: 24px;
   line-height: 162%;
   color: #414141;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const MarkupSection = () => {
