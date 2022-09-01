@@ -14,6 +14,10 @@ const StyledAuditSection = styled.section`
   backdrop-filter: blur(120px);
   border-radius: 68px;
   color: #c7c7c7;
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
 `;
 
 const StyledAuditSectionTitle = styled.h3`
@@ -21,6 +25,10 @@ const StyledAuditSectionTitle = styled.h3`
   font-size: 76px;
   margin-bottom: 96px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 const StyledAuditScores = styled.div`
@@ -30,6 +38,11 @@ const StyledAuditScores = styled.div`
   gap: 67px;
   margin-bottom: 128px;
   filter: drop-shadow(0px 0px 100px #7bf55d);
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 `;
 
 const StyledAuditScorItem = styled.div`
@@ -46,6 +59,13 @@ const StyledAuditScorItem = styled.div`
   border-radius: 100%;
   height: 212px;
   width: 212px;
+
+  @media (max-width: 768px) {
+    height: 100px;
+    width: 100px;
+    font-weight: 400;
+    font-size: 30px;
+  }
 `;
 
 const StyledAuditSectionDescription = styled.p`
@@ -61,6 +81,10 @@ const StyledAuditSectionDescription = styled.p`
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
   }
 `;
 

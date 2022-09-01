@@ -16,6 +16,16 @@ const StyledMidBanner = styled.section`
   background-image: url("/images/mid_banner.svg");
   background-repeat: no-repeat;
   background-size: auto;
+
+  @media (max-width: 768px) {
+    border-radius: 30px;
+    margin: 0 auto;
+    background-size: contain;
+    height: auto;
+    padding-top: 30px;
+    background-position: center;
+    background-size: cover;
+  }
 `;
 
 const StyledMidBannerContent = styled.div`
@@ -39,14 +49,30 @@ const StyledArrow = styled.div`
   position: absolute;
   top: 267px;
   right: 100px;
+
+  @media (max-width: 768px) {
+    position: static;
+    text-align: center;
+  }
 `;
 
 const StyledMidBannerImg = styled.div`
   width: 810px;
+  height: 807px;
   position: absolute;
   bottom: -370px;
   transform: translateX(-50%);
   left: 50%;
+
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    transform: none;
+    bottom: -100px;
+    left: 0;
+  }
 `;
 
 const MidBanner = () => {
@@ -72,12 +98,7 @@ const MidBanner = () => {
             />
           </StyledArrow>
           <StyledMidBannerImg>
-            <Image
-              src="/images/retro_computer.svg"
-              alt=""
-              height="807"
-              width="810"
-            />
+            <Image src="/images/retro_computer.svg" alt="" layout="fill" />
           </StyledMidBannerImg>
         </StyledMidBanner>
       </StyledContainer>

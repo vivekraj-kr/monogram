@@ -62,11 +62,20 @@ const StyledSphere = styled.div`
   text-align: center;
   margin-left: -165px;
   margin-bottom: -418px;
+
+  @media (max-width: 768px) {
+    margin-left: -50px;
+    margin-bottom: -50%;
+  }
 `;
 
 const StyledInvertedBorderBlock = styled.div`
   height: 418px;
   background-color: #ffffff;
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
 `;
 
 const FallingLogos = () => {

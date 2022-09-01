@@ -11,6 +11,11 @@ const StyledHeroBanner = styled.section`
   background-position: 100% 153px;
   background-color: #ffffff;
   background-size: auto;
+
+  @media (max-width: 768px) {
+    background-position: center;
+    text-align: center;
+  }
 `;
 
 const StyledHeroBannerDesc = styled.p`
@@ -20,11 +25,21 @@ const StyledHeroBannerDesc = styled.p`
   line-height: 35px;
   font-size: 18px;
   color: #757575;
+
+  @media (max-width: 768px) {
+    margin: 30px auto;
+    color: #222;
+  }
 `;
 
 const StyledMouseline = styled.div`
   margin-left: 256px;
   margin-top: 87px;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    text-align: center;
+  }
 `;
 
 const HeroBanner = () => {

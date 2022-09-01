@@ -9,6 +9,14 @@ const StyledMarkupSection = styled.section`
     url("/images/toppled_blocks.svg"), url("/images/wall_of_blocks.svg");
   background-position: 100% 0, 58px calc(100% - 264px), 0 100%;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    background-image: url("/images/wall_of_blocks.svg");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    min-height: 0;
+    padding-bottom: 200px;
+  }
 `;
 
 const StyledMarkupDescription = styled.p`

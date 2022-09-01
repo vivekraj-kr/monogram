@@ -3,10 +3,15 @@ import styled from "styled-components";
 
 const StyledFooterContainer = styled(StyledContainer)`
   padding: 245px 0 158px;
+
+  @media (max-width: 768px) {
+    padding: 100px 30px;
+  }
 `;
 
 const StyledFooterText = styled.p`
   font-size: 24px;
+  line-height: 40px;
   color: #ffffff;
   text-align: center;
   margin-bottom: 30px;
