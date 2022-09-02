@@ -35,7 +35,24 @@ export default class CustomDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <link rel="icon" href="/images/favicon.ico" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            name="description"
+            content="Jamstack - Design by Vivekraj for monogram"
+          />
+          <meta name="keywords" content="React, Nextjs, svelte, Front-end" />
+          <meta
+            property="og:title"
+            content="Jamstack - Design by Vivekraj for monogram"
+          />
+          <meta property="og:url" content="https://monogram-nu.vercel.app/" />
+          <meta property="og:image" content="/images/3D_circle.svg" />
+          <meta
+            property="og:description"
+            content="Jamstack - Design by Vivekraj for monogram"
+          />
           <meta name="theme-color" content="#000000" />
+          <title>Jamstack - Design by Vivekraj for monogram</title>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
