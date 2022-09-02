@@ -39,9 +39,12 @@ const StyledAuditScores = styled.div`
   margin-bottom: 128px;
   filter: drop-shadow(0px 0px 100px #7bf55d);
 
+  @media (max-width: 1360px) {
+    gap: 30px;
+  }
+
   @media (max-width: 768px) {
     flex-wrap: wrap;
-    gap: 30px;
   }
 `;
 
@@ -60,7 +63,7 @@ const StyledAuditScorItem = styled.div`
   height: 212px;
   width: 212px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
     height: 100px;
     width: 100px;
     font-weight: 400;

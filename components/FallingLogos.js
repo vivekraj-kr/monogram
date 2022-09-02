@@ -32,6 +32,7 @@ const StyledLogoGrid = styled.div`
 
   @media (max-width: 768px) {
     display: block;
+    text-align: center;
   }
 `;
 
@@ -70,7 +71,17 @@ const StyledSphere = styled.div`
   margin-left: -165px;
   margin-bottom: -418px;
 
+  @media (max-width: 1280px) {
+    height: 600px;
+    width: 600px;
+    margin-left: 10%;
+    margin-bottom: -260px;
+  }
+
   @media (max-width: 768px) {
+    height: auto;
+    width: auto;
+    transform: none;
     margin-left: -50px;
     margin-bottom: -50%;
   }

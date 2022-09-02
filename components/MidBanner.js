@@ -15,7 +15,11 @@ const StyledMidBanner = styled.section`
   margin: 0 -58px;
   background-image: url("/images/mid_banner.svg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
+
+  @media (max-width: 1360px) {
+    margin: 0 auto;
+  }
 
   @media (max-width: 768px) {
     border-radius: 30px;
@@ -63,6 +67,16 @@ const StyledMidBannerImg = styled.div`
   bottom: -370px;
   transform: translateX(-50%);
   left: 50%;
+
+  @media (max-width: 1280px) {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    transform: none;
+    bottom: 0;
+    left: 0;
+  }
 
   @media (max-width: 768px) {
     width: 300px;
